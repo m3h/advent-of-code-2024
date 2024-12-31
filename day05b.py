@@ -28,10 +28,6 @@ while i < len(data):
     updates.append(update_s)
     i += 1
 
-print(rules)
-print(updates)
-
-
 def check_update(update):
     for i in range(len(update)):
         for j in range(i+1, len(update)):

@@ -2,13 +2,6 @@
 
 from aocd import data, submit
 
-data1 = """7 6 4 2 1
-1 2 7 8 9
-9 7 6 2 1
-1 3 2 4 5
-8 6 4 4 1
-1 3 6 7 9"""
-
 reports = []
 for line in data.splitlines():
     reports.append([int(x) for x in line.split()])
@@ -33,7 +26,6 @@ for report in reports:
             very_unsafe = True
 
     if not very_unsafe:
-        print(report)
         c += 1        
 
 

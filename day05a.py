@@ -29,10 +29,6 @@ while i < len(data):
     updates.append(update_s)
     i += 1
 
-print(rules)
-print(updates)
-
-
 def check_update(update):
     for i in range(len(update)):
         for j in range(i+1, len(update)):
@@ -45,7 +41,6 @@ def check_update(update):
 ssum = 0
 for update in updates:
     if check_update(update):
-        print('PASS', update)
         ssum += update[len(update)//2]
 print(ssum)
 

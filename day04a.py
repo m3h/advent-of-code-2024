@@ -10,7 +10,6 @@ for line in data.splitlines():
     for row in line:
         rd.append(row)
     d.append(rd)
-print(d)
 
 w = list('XMAS')
 
